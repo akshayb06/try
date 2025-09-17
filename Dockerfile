@@ -1,4 +1,3 @@
-COPY build/libs/demo-0.0.1-SNAPSHOT.jar app.jar
 # Stage 1: Build the app
 FROM gradle:8.0-jdk17 AS build
 COPY --chown=gradle:gradle . /home/gradle/project
